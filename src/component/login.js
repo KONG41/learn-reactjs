@@ -1,27 +1,14 @@
 import React, { Component } from "react";
 // import { Link } from "react-router-dom";
 import { Link } from "react-router-dom";
+import InputFile from "./input";
 const Login = () => {
   return (
     <div className="container">
       <label className="login">LOGIN</label>
       <div>
-        <ul>
-          <li>
-            <label className="label">Email</label>
-          </li>
-          <li>
-            <label className="label">Password</label>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="text" />
-          </li>
-          <li>
-            <input type="password" />
-          </li>
-        </ul>
+        <InputFile name="Name" />
+        <InputFile name="Password" />
       </div>
       <div className="btn">
         <label>Login</label>

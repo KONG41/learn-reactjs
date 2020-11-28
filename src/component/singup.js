@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Form, Group, Label, Control, Row, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import InputEmail from "./InputEmail";
+import InputPass from "./inputPass";
+import InputTxt from "./inputTxt";
 const Singup = () => {
   return (
     <div className="singup-con">
@@ -12,35 +15,13 @@ const Singup = () => {
         </div>
         <Form>
           <Form.Row>
-            <Form.Group as={Col} controlId="formGridEmail">
-              <Form.Label>First Name</Form.Label>
-              <Form.Control type="name" placeholder="First Name" />
-            </Form.Group>
-
-            <Form.Group as={Col} controlId="formGridPassword">
-              <Form.Label>Last Name</Form.Label>
-              <Form.Control type="name" placeholder="Last Name" />
-            </Form.Group>
+            <InputTxt name="First Name" />
+            <InputTxt name="Last Name" />
           </Form.Row>
 
-          <Form.Group controlId="formGroupEmail">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
-          </Form.Group>
-          <Form.Group controlId="formGroupPassword">
-            <Form.Label>Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" />
-          </Form.Group>
-          <Form.Group controlId="formGroupPassword">
-            <Form.Label>Confirm Password</Form.Label>
-            <Form.Control type="password" placeholder="Confirrm Password" />
-          </Form.Group>
-          {/* <Form.Group>
-            <label>
-              <Form.Check aria-label="option 1" />I accept the
-              <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a>
-            </label>
-          </Form.Group> */}
+          <InputEmail name="Email" placeholder="Enter Email" />
+          <InputPass name="Password" placeholder="Password" />
+          <InputPass name="Comfirm Password" placeholder="Comfirm Password" />
           <Form.Group id="formGridCheckbox">
             <Form.Check
               type="checkbox"
