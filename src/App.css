@@ -2,70 +2,7 @@ body {
   margin: 0;
   padding: 0;
 }
-.container {
-  width: 600px;
-  height: 500px;
-  background-color: rgba(172, 255, 47, 0.493);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.login {
-  font-size: 40px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-.container ul {
-  position: absolute;
-  left: 5%;
-  top: 30%;
-  transform: translate(-5%, -30%);
-}
-.container ul:last-child {
-  left: 50%;
-}
-.container ul li {
-  list-style-type: none;
-  padding-top: 40px;
-}
-.label {
-  font-size: 30px;
-  text-align: end;
-  display: block;
-}
-.container ul:last-child li input {
-  width: 200px;
-  height: 30px;
-  font-size: large;
-}
-.btn {
-  position: absolute;
-  bottom: 15%;
-  left: 50px;
-  background-color: rgba(255, 0, 0, 0.52);
-  border-radius: 10px;
-}
-.btn label {
-  font-size: 40px;
-  padding: 10px;
-  cursor: pointer;
-}
-.btn1 {
-  position: absolute;
-  bottom: 15%;
-  right: 50px;
-  background-color: rgba(255, 0, 0, 0.52);
-  border-radius: 10px;
-}
-.btn1 label {
-  font-size: 40px;
-  padding: 10px;
-  cursor: pointer;
-  color: black;
-}
+
 .singup-con {
   width: 800px;
   height: 800px;
@@ -100,14 +37,27 @@ body {
   color: rgba(128, 128, 128, 0.575);
   margin: 20px;
 }
-.btn-sub {
+.btn-singup {
   position: absolute;
-  bottom: 30px;
+  bottom: 50px;
   left: 30px;
 }
-.input {
+
+.btn-login {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 50px;
+  right: 30px;
+}
+.fill-form {
+  margin-top: 100px;
+}
+.detail {
+  color: rgba(128, 128, 128, 0.575);
+  margin-top: 20px;
+}
+.detail li {
+  list-style-type: none;
+}
+.detail li a {
+  text-decoration: none;
 }
