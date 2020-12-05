@@ -2,9 +2,8 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Form, Group, Label, Control, Row, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import InputEmail from "./InputEmail";
-import InputPass from "./inputPass";
-import InputTxt from "./inputTxt";
+import Btn from "./button";
+import InputFile from "./inputFile";
 const Singup = () => {
   return (
     <div className="singup-con">
@@ -15,13 +14,36 @@ const Singup = () => {
         </div>
         <Form>
           <Form.Row>
-            <InputTxt name="First Name" />
-            <InputTxt name="Last Name" />
+            <Form.Group as={Col} controlId="formGridEmail">
+              <InputFile
+                type="text"
+                name="First Name"
+                placeholder="your first-name"
+              />
+            </Form.Group>
+            <Form.Group as={Col} controlId="formGridEmail">
+              <InputFile
+                type="text"
+                name="Last Name"
+                placeholder="your last-name"
+              />
+            </Form.Group>
           </Form.Row>
 
-          <InputEmail name="Email" placeholder="Enter Email" />
-          <InputPass name="Password" placeholder="Password" />
-          <InputPass name="Comfirm Password" placeholder="Comfirm Password" />
+          {/* <InputEmail name="Email" placeholder="Enter Email" /> */}
+          <Form.Group controlId="formGroupEmail">
+            <InputFile type="email" name="Email" placeholder="username@email" />
+          </Form.Group>
+          <Form.Group controlId="formGroupPassword">
+            <InputFile type="password" name="Password" placeholder="password" />
+          </Form.Group>
+          <Form.Group controlId="formGroupPassword">
+            <InputFile
+              type="password"
+              name="Comfirm Password"
+              placeholder="confirm-password"
+            />
+          </Form.Group>
           <Form.Group id="formGridCheckbox">
             <Form.Check
               type="checkbox"
@@ -31,9 +53,7 @@ const Singup = () => {
           </Form.Group>
         </Form>
         <Link to="/home">
-          <Button variant="primary" className="btn-sub">
-            Submit
-          </Button>
+          <Btn value="Submit"></Btn>
         </Link>
       </div>
     </div>
