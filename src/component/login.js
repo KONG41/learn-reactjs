@@ -9,7 +9,11 @@ const Login = () => {
   return (
     <div className="singup-con">
       <div className="singup-form">
-        <Header name="Login" detail="Please fill this to login your account" />
+        <Header
+          name="Login"
+          className="title"
+          detail="Please fill this to login your account"
+        />
         <Form className="fill-form">
           <Form.Group controlId="formGroupUsername">
             <InputFile type="email" name="Email" placeholder="username@email" />

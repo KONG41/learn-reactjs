@@ -61,3 +61,29 @@ body {
 .detail li a {
   text-decoration: none;
 }
+.home-container {
+  margin: auto;
+  width: 50%;
+  height: auto;
+  padding: 10px;
+  background-color: #3598dc;
+}
+.header-container {
+  background-color: rgba(255, 192, 203, 0.15);
+}
+table,
+th,
+td {
+  margin: auto;
+  width: 50%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 5px;
+  text-align: left;
+}
+th {
+  background-color: #3598dc;
+}
