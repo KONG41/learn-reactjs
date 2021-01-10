@@ -6,7 +6,7 @@ import TableHeader from "./tableHeader";
 import TableRow from "./tableRow";
 import Btn from "./button";
 import { useState } from "react";
-import { MapTwoTone } from "@material-ui/icons";
+
 // import DataTable from "./dataTable";
 const Home = () => {
   const [inputId, setInputId] = useState("");
@@ -78,6 +78,10 @@ const Home = () => {
             <TableHeader name1="ID" name2="Name" name3="Quantity" />
             {data.map((tableRow) => (
               <TableRow
+                tableRow={tableRow}
+                data={data}
+                setData={setData}
+                key={tableRow.tableId}
                 id={tableRow.id}
                 name={tableRow.name}
                 qty={tableRow.qty}
